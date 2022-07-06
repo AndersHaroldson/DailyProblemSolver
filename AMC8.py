@@ -44,14 +44,14 @@ def AMC_MAIN():
     server.starttls()
     server.ehlo()
 
-    server.login('mrsquinker@gmail.com', 'prvhmyalwnxxbzne')
+    server.login(sender', code)
 
     subject = 'Your Daily AMC 8 Problem!'
     body = 'Here it is: ' + str(problem_URL)
 
     msg = f"Subject: {subject}\n\n{body}"
 
-    server.sendmail('mrsquinker@gmail.com', 'andersharoldson@icloud.com', msg)
+    server.sendmail(sender, recipient, msg)
     print("Email Has Gone Though")
 
     server.quit()
